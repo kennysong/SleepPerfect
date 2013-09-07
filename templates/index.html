@@ -20,30 +20,48 @@
   </head>
   <body>
 
-    <header class="bar-title">
-      <a class="button" href="#">
-        Left
-      </a>
-      <h1 class="title">SleepPerfect</h1>
-      <a class="button" href="#">
-        Right
-      </a>
-    </header>
+    <div class="content" style="background:#000112;">
+      <center>
+      <p style="font-family: Lato;font-size: 26px;font-weight: 300;color: rgb(219, 219, 219);margin-top: 20px;margin-bottom: 15px;">SleepPerfect</p>
 
-    <div class="content">
-      <div class="content-padded">
-        <p class="welcome">Thanks for downloading Ratchet. This is an example HTML page that's linked up to compiled Ratchet CSS and JS, has the proper meta tags and the HTML structure. Need some more help before you start filling this with your own content? Check out some Ratchet resorces:</p>
-      </div>
-
-     <ul class="list inset">
-        <li>
-            <a href="two.html" data-transition="slide-in">
-                Go to page 2
-            </a>
-            <span class="chevron"></span>
-        </li>
-    </ul>
-
+      <a href="alarm_sleepbtn.html" data-transition="slide-in"><img id="sleep" src="/img/sleep_unpressed.png" style="width:300px;margin:0 auto;"></a>
+      <a href="/stats.html" data-transition="slide-in"><img id="stats" src="/img/mystats_unpressed.png" style="width:300px;margin:0 auto;"></a>
+      <a href="/options.html" data-transition="slide-in"><img id="options" src="/img/options_unpressed.png" style="width:300px;margin:0 auto;"></a>
+      </center>
     </div>
+
+    <script type="text/javascript">
+      document.getElementById('sleep').addEventListener('touchstart', function(event) { 
+        document.getElementById('sleep').src = '/img/sleep_pressed.png';
+
+      },false);
+
+      document.getElementById('sleep').addEventListener('touchend', function(event) { 
+        document.getElementById('sleep').src = '/img/sleep_unpressed.png';
+
+      },false);
+
+      document.getElementById('options').addEventListener('touchstart', function(event) { 
+        document.getElementById('options').src = '/img/options_pressed.png';
+
+      },false);
+
+      document.getElementById('options').addEventListener('touchend', function(event) { 
+        document.getElementById('options').src = '/img/options_unpressed.png';
+
+      },false);
+
+      document.getElementById('stats').addEventListener('touchstart', function(event) { 
+        document.getElementById('stats').src = '/img/mystats_pressed.png';
+
+      },false);
+
+      document.getElementById('stats').addEventListener('touchend', function(event) { 
+        document.getElementById('stats').src = '/img/mystats_unpressed.png';
+
+      },false);
+
+    </script>
+
   </body>
 </html>

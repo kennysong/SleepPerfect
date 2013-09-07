@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ratchet template page</title>
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="/touch-icons/apple-touch-icon-57x57.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/touch-icons/apple-touch-icon-57x57.png">
+
+    <link rel="stylesheet" href="/css/ratchet.css">
+    <script src="/js/ratchet.js"></script>
+
+
+    <link href="http://fonts.googleapis.com/css?family=Oxygen:400,300|Lato:100,300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+
+    <div class="content" style="background:#000112;">
+    <a href="/" data-transition="slide-out">Back</a>
+      <center>
+        <img src="/img/setalarm.png" style="width:290px">
+        <a href="tracking.html" data-transition="fade"><img id="sleepperfect" src="/img/sleepperfect.png" style="width:230px"></a>
+      </center>
+    </div>
+
+    <script type="text/javascript">
+     document.getElementById('sleepperfect').addEventListener('touchstart', function(event) { 
+        document.getElementById('sleepperfect').src = '/img/sleepperfect_pressed.png';
+
+      },false);
+
+      document.getElementById('sleepperfect').addEventListener('touchend', function(event) { 
+        document.getElementById('sleepperfect').src = '/img/sleepperfect.png';
+
+      },false);
+      </script>
+  </body>
+</html>
