@@ -1258,3 +1258,21 @@ select {
   -webkit-transform: translate3d(100%, 0, 0);
           transform: translate3d(100%, 0, 0);
 }
+
+.iphone-content {
+  width: 320px;
+  height: 548px;
+}
+
+#sleep-btn {
+background-image: linear-gradient(to bottom, #02176D 0, #05A0BE 100%);  border: 1px solid #407FF0;
+  display: block;
+  padding: 11px 0 13px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 160px;
+  border-radius: 3px;
+}

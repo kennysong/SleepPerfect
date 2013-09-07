@@ -1,8 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__, static_folder='public', static_url_path='')
 
 @app.route('/')
-def hello_world():
+def index():
 	return render_template('index.html')
 
 if __name__ == '__main__':
