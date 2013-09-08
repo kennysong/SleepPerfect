@@ -6,7 +6,7 @@ SleepPerfect helps you achieve _your_ ideal sleep. Tracks sleep quality & correl
 
 iOS model built with Ratchet, Flask, & Heroku.
 
-######Available at (save to home screen with mobile Safari):
+#####Available at (save to home screen with mobile Safari):
 
 http://sleepperfect.herokuapp.com
 
