@@ -31,15 +31,15 @@
 
 
     <div class="content" style="background:#000112;">
-    <a href="/" data-transition="slide-out" id='left' style="float: left;position: relative;top: 250px;z-index: 100000;"><img src="/img/left.png" style="height: 60px;opacity:.25"></a>
+    <a href="/" data-transition="slide-out" id='back' style="float: left;position: relative;top: 250px;z-index: 100000;"><img src="/img/left.png" style="height: 60px;opacity:.25"></a>
       <center>
-        <img src="/img/setalarm.png" style="width: 275px;position: absolute;top: 20px;right: 13px;">
+        <img src="/img/setalarm.png" style="width: 260px;position: absolute;top: 30px;right: 18px;">
         <a href="tracking.html" data-transition="slide-in"><img id="sleepperfect" src="/img/sleepperfect.png" style="width: 255px;position: absolute;top: 285px;left: 36px;"></a>
       </center>
     </div>
 
     <script type="text/javascript">
-     document.getElementById('sleepperfect').addEventListener('touchstart', function(event) { 
+    document.getElementById('sleepperfect').addEventListener('touchstart', function(event) { 
         document.getElementById('sleepperfect').src = '/img/sleepperfect_pressed.png';
 
       },false);
@@ -49,14 +49,14 @@
 
       },false);
 
-      document.getElementById('left').addEventListener('touchstart', function(event) { 
-        console.log('left')
-        document.getElementById('left').src = '/img/left_a.png';
+      document.getElementById('back').addEventListener('touchstart', function(event) { 
+        console.log('back')
+        document.getElementById('back').style.opacity = 0.6;
 
       },false);
 
-      document.getElementById('left').addEventListener('touchend', function(event) { 
-        document.getElementById('left').src = '/img/left.png';
+      document.getElementById('back').addEventListener('touchend', function(event) { 
+        document.getElementById('back').style.opacity = 0.25;
 
       },false);
       </script>
