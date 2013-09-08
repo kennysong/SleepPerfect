@@ -17,6 +17,18 @@
 
 
     <link href="http://fonts.googleapis.com/css?family=Oxygen:400,300|Lato:100,300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+      var im = new Image();
+      im.src = '/img/sleep_pressed.png';
+
+      var im2 = new Image();
+      im2.src = '/img/options_pressed.png';
+
+      var im3 = new Image();
+      im3.src = '/img/mystats_pressed.png';
+    </script>
+
   </head>
   <body>
 
@@ -33,12 +45,12 @@
     <script type="text/javascript">
       document.getElementById('sleep').addEventListener('touchstart', function(event) { 
         document.getElementById('sleep').src = '/img/sleep_pressed.png';
-
+        console.log('press sleep')
       },false);
 
       document.getElementById('sleep').addEventListener('touchend', function(event) { 
         document.getElementById('sleep').src = '/img/sleep_unpressed.png';
-
+        console.log('press sleep')
       },false);
 
       document.getElementById('options').addEventListener('touchstart', function(event) { 

@@ -17,15 +17,24 @@
 
 
     <link href="http://fonts.googleapis.com/css?family=Oxygen:400,300|Lato:100,300,400,700,900,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+      var im = new Image();
+      im.src = '/img/sleepperfect_pressed.png';
+
+      var im2 = new Image();
+      im2.src = '/img/left_a.png';
+
+    </script>
   </head>
   <body>
 
 
     <div class="content" style="background:#000112;">
-    <a href="/" data-transition="slide-out">Back</a>
+    <a href="/" data-transition="slide-out" id='left' style="float: left;position: relative;top: 250px;z-index: 100000;"><img src="/img/left.png" style="height: 60px;opacity:.25"></a>
       <center>
-        <img src="/img/setalarm.png" style="width:290px">
-        <a href="tracking.html" data-transition="fade"><img id="sleepperfect" src="/img/sleepperfect.png" style="width:230px"></a>
+        <img src="/img/setalarm.png" style="width: 275px;position: absolute;top: 20px;right: 13px;">
+        <a href="tracking.html" data-transition="slide-in"><img id="sleepperfect" src="/img/sleepperfect.png" style="width: 255px;position: absolute;top: 285px;left: 36px;"></a>
       </center>
     </div>
 
@@ -37,6 +46,17 @@
 
       document.getElementById('sleepperfect').addEventListener('touchend', function(event) { 
         document.getElementById('sleepperfect').src = '/img/sleepperfect.png';
+
+      },false);
+
+      document.getElementById('left').addEventListener('touchstart', function(event) { 
+        console.log('left')
+        document.getElementById('left').src = '/img/left_a.png';
+
+      },false);
+
+      document.getElementById('left').addEventListener('touchend', function(event) { 
+        document.getElementById('left').src = '/img/left.png';
 
       },false);
       </script>
