@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request
+import os
 app = Flask(__name__, static_folder='public', static_url_path='')
 
 @app.route('/')
